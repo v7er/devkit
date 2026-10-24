@@ -1,0 +1,77 @@
+import { lazyTool } from "../lazy";
+import type { ToolDefinition } from "../types";
+
+export const codeTools: ToolDefinition[] = [
+  {
+    id: "chmod",
+    name: "chmod Calculator",
+    description: "Convert file modes between octal and symbolic forms and generate a chmod command.",
+    category: "code",
+    keywords: ["permissions", "file mode", "unix", "linux", "symbolic", "octal", "setuid"],
+    component: lazyTool(() => import("./chmod")),
+  },
+  {
+    id: "git-helper",
+    name: "Git Command Helper",
+    description: "Build common Git commands with flag explanations and destructive-operation warnings.",
+    category: "code",
+    keywords: ["commit", "branch", "rebase", "cherry-pick", "reset", "stash", "push"],
+    component: lazyTool(() => import("./git-helper")),
+  },
+  {
+    id: "docker-compose",
+    name: "Docker Compose Validator",
+    description: "Validate a Compose file and generate a starter stack from common services.",
+    category: "code",
+    keywords: ["yaml", "services", "container", "stack", "dockerfile"],
+    component: lazyTool(() => import("./docker-compose")),
+  },
+  {
+    id: "env-formatter",
+    name: "Env File Formatter",
+    description: "Sort, deduplicate, quote, and validate the keys in a .env file.",
+    category: "code",
+    keywords: ["dotenv", "environment", "variables", "secrets", "shell"],
+    component: lazyTool(() => import("./env-formatter")),
+  },
+  {
+    id: "ast-explorer",
+    name: "JavaScript AST Explorer",
+    description: "Parse JavaScript and inspect its syntax tree node by node.",
+    category: "code",
+    keywords: ["acorn", "estree", "syntax", "parser", "tree", "javascript"],
+    component: lazyTool(() => import("./ast-explorer")),
+  },
+  {
+    id: "js-minifier",
+    name: "JavaScript Minifier",
+    description: "Minify JavaScript with Terser and report the compressed size.",
+    category: "code",
+    keywords: ["terser", "compress", "uglify", "bundle", "size"],
+    component: lazyTool(() => import("./js-minifier")),
+  },
+  {
+    id: "gitignore",
+    name: ".gitignore Generator",
+    description: "Merge stack presets into a deduplicated .gitignore file.",
+    category: "code",
+    keywords: ["ignore", "node", "python", "rust", "macos", "editors"],
+    component: lazyTool(() => import("./gitignore")),
+  },
+  {
+    id: "code-screenshot",
+    name: "Code Screenshot",
+    description: "Render highlighted code to a themed PNG with padding and line numbers.",
+    category: "code",
+    keywords: ["image", "canvas", "highlight", "share", "export"],
+    component: lazyTool(() => import("./code-screenshot")),
+  },
+  {
+    id: "nginx-helper",
+    name: "Nginx Config Helper",
+    description: "Generate nginx server, proxy, static, and TLS configuration blocks.",
+    category: "code",
+    keywords: ["server", "reverse proxy", "ssl", "tls", "webserver", "configuration"],
+    component: lazyTool(() => import("./nginx-helper")),
+  },
+];

@@ -1,0 +1,78 @@
+import { lazyTool } from "../lazy";
+import type { ToolDefinition } from "../types";
+
+export const encodingTools: ToolDefinition[] = [
+  {
+    id: "base64",
+    name: "Base64 Encoder / Decoder",
+    description: "Encode UTF-8 text or files to Base64, or decode Base64 back to readable text.",
+    category: "encoding",
+    keywords: ["base64", "encode", "decode", "binary", "data url", "atob", "btoa"],
+    component: lazyTool(() => import("./base64")),
+    featured: true,
+  },
+  {
+    id: "url-encoder",
+    name: "URL Encoder / Decoder",
+    description: "Percent-encode or decode URLs, query values, and path segments.",
+    category: "encoding",
+    keywords: ["url", "uri", "percent", "query", "component", "escape"],
+    component: lazyTool(() => import("./url-encoder")),
+  },
+  {
+    id: "html-entities",
+    name: "HTML Entity Encoder / Decoder",
+    description: "Encode special characters as named or numeric HTML entities, or decode entities back to text.",
+    category: "encoding",
+    keywords: ["html", "entities", "escape", "unescape", "named", "numeric", "amp", "character reference"],
+    component: lazyTool(() => import("./html-entities")),
+  },
+  {
+    id: "hex-text",
+    name: "Hex ↔ Text",
+    description: "Convert UTF-8 text to hexadecimal bytes and back, with optional separators and uppercase.",
+    category: "encoding",
+    keywords: ["hex", "hexadecimal", "text", "bytes", "utf-8", "separator"],
+    component: lazyTool(() => import("./hex-text")),
+  },
+  {
+    id: "binary-text",
+    name: "Binary ↔ Text",
+    description: "Convert UTF-8 text to 8-bit binary groups and back, with separators and byte counts.",
+    category: "encoding",
+    keywords: ["binary", "bits", "bytes", "text", "utf-8", "base2"],
+    component: lazyTool(() => import("./binary-text")),
+  },
+  {
+    id: "morse-code",
+    name: "Morse Code Translator",
+    description: "Translate text to Morse code and back, then play the result as Web Audio tones.",
+    category: "encoding",
+    keywords: ["morse", "code", "telegraph", "audio", "cw", "tones"],
+    component: lazyTool(() => import("./morse-code")),
+  },
+  {
+    id: "gzip",
+    name: "Gzip / Deflate",
+    description: "Compress UTF-8 text to gzip or deflate Base64, or decompress Base64 data back to text.",
+    category: "encoding",
+    keywords: ["gzip", "deflate", "compress", "decompress", "zlib", "base64", "rfc 1952"],
+    component: lazyTool(() => import("./gzip")),
+  },
+  {
+    id: "punycode",
+    name: "Punycode / IDN Converter",
+    description: "Convert Unicode domain names to ASCII Punycode and back across every label.",
+    category: "encoding",
+    keywords: ["punycode", "idn", "domain", "unicode", "ascii", "xn--", "rfc 3492"],
+    component: lazyTool(() => import("./punycode")),
+  },
+  {
+    id: "base32-base58",
+    name: "Base32 / Base58",
+    description: "Encode and decode text or hex with Base32 and Base58 alphabets.",
+    category: "encoding",
+    keywords: ["base32", "base58", "bitcoin", "rfc 4648", "alphabet", "encode", "decode"],
+    component: lazyTool(() => import("./base32-base58")),
+  },
+];

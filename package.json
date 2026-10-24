@@ -1,0 +1,36 @@
+{
+  "name": "devkit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.14.0",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @devkit/web dev",
+    "build": "pnpm --filter @devkit/web build",
+    "preview": "pnpm --filter @devkit/web preview",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "lint": "eslint .",
+    "test": "pnpm -r --if-present test",
+    "test:watch": "pnpm --filter @devkit/web test:watch",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "tauri": "pnpm --filter @devkit/desktop tauri",
+    "tauri:dev": "pnpm --filter @devkit/desktop tauri dev",
+    "tauri:build": "pnpm --filter @devkit/desktop tauri build",
+    "deploy": "pnpm --filter @devkit/web deploy",
+    "deploy:dry": "pnpm --filter @devkit/web deploy:dry"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.72.0"
+  }
+}
