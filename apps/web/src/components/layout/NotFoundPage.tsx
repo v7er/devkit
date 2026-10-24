@@ -4,7 +4,7 @@ import { ArrowLeft } from "lucide-react";
 export function NotFoundPage() {
   return (
     <div className="flex flex-col items-center justify-center py-24 text-center animate-fade-in">
-      <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-accent">404</p>
+      <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-accent">404</p>
       <h1 className="mt-3 text-3xl font-semibold tracking-[-0.03em] text-text sm:text-4xl">
         Page not found
       </h1>

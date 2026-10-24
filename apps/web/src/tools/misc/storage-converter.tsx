@@ -121,7 +121,7 @@ export default function StorageConverterTool() {
                       .filter((row) => row.system === system)
                       .map((row) => (
                         <div key={row.unit} className="flex items-baseline justify-between gap-3">
-                          <dt className="font-mono text-[11px] text-faint">{row.unit}</dt>
+                          <dt className="font-mono text-[12px] text-faint">{row.unit}</dt>
                           <dd className="break-all text-right font-mono text-xs text-text">
                             {row.value}
                           </dd>

@@ -57,17 +57,17 @@ export default function CssMinifierTool() {
           <div className="space-y-3">
             <div className="grid grid-cols-3 gap-2 rounded-lg border border-line bg-surface-2 p-3 text-center">
               <div>
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-faint">Before</p>
+                <p className="text-[12px] font-semibold uppercase tracking-wider text-faint">Before</p>
                 <p className="mt-0.5 font-mono text-sm text-text">{formatBytes(before)}</p>
               </div>
               <div>
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-faint">After</p>
+                <p className="text-[12px] font-semibold uppercase tracking-wider text-faint">After</p>
                 <p className="mt-0.5 font-mono text-sm text-text">
                   {result.error ? "—" : formatBytes(after)}
                 </p>
               </div>
               <div>
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-faint">Saved</p>
+                <p className="text-[12px] font-semibold uppercase tracking-wider text-faint">Saved</p>
                 <p className="mt-0.5 font-mono text-sm text-text">
                   {saved === null ? "—" : `${saved.toFixed(1)}%`}
                 </p>

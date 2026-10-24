@@ -157,7 +157,7 @@ export default function TextDedupeTool() {
                 key={group.value}
                 className="flex items-center justify-between gap-3 rounded-lg border border-line bg-surface-2 px-3 py-2"
               >
-                <span className="min-w-0 break-all font-mono text-[12px] text-text">
+                <span className="min-w-0 break-all font-mono text-[13px] text-text">
                   {group.value || "(empty line)"}
                 </span>
                 <Badge tone="warning">×{group.count}</Badge>

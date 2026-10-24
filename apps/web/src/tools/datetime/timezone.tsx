@@ -143,7 +143,7 @@ export default function TimezoneTool() {
                     <p className="text-xs text-muted">
                       {row.weekday} {row.date}
                     </p>
-                    <p className="mt-0.5 font-mono text-[11px] text-faint">
+                    <p className="mt-0.5 font-mono text-[12px] text-faint">
                       {row.zone} · {row.abbreviation}
                     </p>
                   </div>

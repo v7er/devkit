@@ -49,7 +49,7 @@ const TOKEN_TONE: Record<DiffKind, string> = {
 function UnifiedLines({ lines }: { lines: DiffLine[] }) {
   return (
     <div className="max-h-[460px] overflow-auto rounded-lg border border-line">
-      <table className="w-full border-collapse font-mono text-[12px] leading-relaxed">
+      <table className="w-full border-collapse font-mono text-[13px] leading-relaxed">
         <tbody>
           {lines.map((line, index) => (
             <tr key={index} className={LINE_TONE[line.kind]}>
@@ -80,7 +80,7 @@ function SideBySideLines({
 }) {
   return (
     <div className="max-h-[460px] overflow-auto rounded-lg border border-line">
-      <table className="w-full border-collapse font-mono text-[12px] leading-relaxed">
+      <table className="w-full border-collapse font-mono text-[13px] leading-relaxed">
         <tbody>
           {rows.map((row, index) => (
             <tr key={index}>
@@ -116,7 +116,7 @@ function SideBySideLines({
 
 function TokenFlow({ tokens, hide }: { tokens: DiffToken[]; hide?: DiffKind }) {
   return (
-    <div className="max-h-[460px] overflow-auto whitespace-pre-wrap break-words rounded-lg border border-line bg-surface p-3 font-mono text-[13px] leading-relaxed">
+    <div className="max-h-[460px] overflow-auto whitespace-pre-wrap break-words rounded-lg border border-line bg-surface p-3 font-mono text-[14px] leading-relaxed">
       {tokens
         .filter((token) => token.kind !== hide)
         .map((token, index) => (
@@ -242,13 +242,13 @@ export default function DiffCheckerTool() {
               ) : (
                 <div className="grid gap-2">
                   <div>
-                    <p className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-faint">
+                    <p className="mb-1 text-[12px] font-semibold uppercase tracking-wider text-faint">
                       Original
                     </p>
                     <TokenFlow tokens={diff.tokens} hide="added" />
                   </div>
                   <div>
-                    <p className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-faint">
+                    <p className="mb-1 text-[12px] font-semibold uppercase tracking-wider text-faint">
                       Changed
                     </p>
                     <TokenFlow tokens={diff.tokens} hide="removed" />

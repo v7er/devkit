@@ -29,7 +29,7 @@ export class ToolErrorBoundary extends Component<{ children: ReactNode }, Bounda
           <Alert tone="danger" title="This tool hit an unexpected error">
             It could not render. Try again, or reload the page if the problem continues.
             {import.meta.env.DEV ? (
-              <span className="mt-1 block font-mono text-[11px] opacity-80">
+              <span className="mt-1 block font-mono text-[12px] opacity-80">
                 {this.state.error.message}
               </span>
             ) : null}

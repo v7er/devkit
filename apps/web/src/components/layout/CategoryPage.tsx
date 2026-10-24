@@ -20,7 +20,7 @@ export function CategoryPage() {
     <div className="animate-fade-in">
       <Link
         to="/"
-        className="inline-flex items-center gap-1.5 text-[13px] text-muted transition-colors hover:text-text"
+        className="inline-flex items-center gap-1.5 text-[14px] text-muted transition-colors hover:text-text"
       >
         <ArrowLeft className="size-3.5" aria-hidden />
         All tools

@@ -197,7 +197,7 @@ export default function X509DecoderTool() {
               {info.subjectAltNames.length ? (
                 <ul className="mt-1.5 space-y-1">
                   {info.subjectAltNames.map((name) => (
-                    <li key={name} className="break-all font-mono text-[11px] text-faint">
+                    <li key={name} className="break-all font-mono text-[12px] text-faint">
                       {name}
                     </li>
                   ))}
@@ -223,7 +223,7 @@ export default function X509DecoderTool() {
               ) : (
                 <p className="mt-1 text-xs text-faint">None found.</p>
               )}
-              <p className="mt-2 text-[11px] leading-relaxed text-faint">
+              <p className="mt-2 text-[12px] leading-relaxed text-faint">
                 Extension values such as key usage, policies, and AIA are named only when known.
                 Treat decoded text as informational until verified with a certificate tool.
               </p>

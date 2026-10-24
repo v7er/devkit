@@ -27,7 +27,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(function 
       className={cn(
         base,
         "resize-y py-2.5 text-sm leading-relaxed",
-        mono && "font-mono text-[13px]",
+        mono && "font-mono text-[14px]",
         className,
       )}
       {...props}

@@ -134,7 +134,7 @@ export default function FlexboxGridTool() {
                     onChange={(event) => update({ gridTemplateColumns: event.target.value })}
                     aria-label="Grid template columns"
                     spellCheck={false}
-                    className="font-mono text-[13px]"
+                    className="font-mono text-[14px]"
                   />
                 </Field>
                 <Field label="Rows" hint="Any valid grid-template-rows value." className="col-span-2">
@@ -143,7 +143,7 @@ export default function FlexboxGridTool() {
                     onChange={(event) => update({ gridTemplateRows: event.target.value })}
                     aria-label="Grid template rows"
                     spellCheck={false}
-                    className="font-mono text-[13px]"
+                    className="font-mono text-[14px]"
                   />
                 </Field>
                 <Select
@@ -206,7 +206,7 @@ export default function FlexboxGridTool() {
                 onChange={(event) => update({ itemBasis: event.target.value })}
                 aria-label="Item basis"
                 spellCheck={false}
-                className="font-mono text-[13px]"
+                className="font-mono text-[14px]"
               />
             </Field>
             <div className="grid grid-cols-2 gap-3">

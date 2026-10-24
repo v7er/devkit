@@ -24,7 +24,7 @@ export function CodeOutput({
   return (
     <div className={cn("overflow-hidden rounded-xl bg-surface-2", className)}>
       <div className="flex items-center justify-between gap-2 px-3 py-2">
-        <span className="px-1 font-mono text-[10px] uppercase tracking-wider text-faint">
+        <span className="px-1 font-mono text-[12px] uppercase tracking-wider text-faint">
           {language ?? "output"}
         </span>
         <div className="flex items-center gap-0.5">
@@ -45,7 +45,7 @@ export function CodeOutput({
       </div>
       <pre
         className={cn(
-          "overflow-auto p-3.5 font-mono text-[13px] leading-relaxed text-text",
+          "overflow-auto p-3.5 font-mono text-[14px] leading-relaxed text-text",
           wrap ? "whitespace-pre-wrap break-words" : "whitespace-pre",
         )}
         style={{ maxHeight }}

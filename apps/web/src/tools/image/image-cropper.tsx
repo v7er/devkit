@@ -372,7 +372,7 @@ export default function ImageCropperTool() {
                 ["Height", pixelRect.height],
               ].map(([label, value]) => (
                 <div key={label} className="rounded-lg border border-line bg-surface-2 p-3">
-                  <p className="text-[10px] uppercase tracking-wider text-faint">{label}</p>
+                  <p className="text-[12px] uppercase tracking-wider text-faint">{label}</p>
                   <p className="mt-1 font-mono text-sm text-text">{value} px</p>
                 </div>
               ))}

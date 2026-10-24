@@ -115,7 +115,7 @@ export default function AsciiTableTool() {
             {LATIN1_NOTES.map((note) => (
               <div key={note.range} className="rounded-lg border border-line bg-surface-2 p-3">
                 <div className="flex items-center gap-2">
-                  <span className="font-mono text-[11px] text-accent">{note.range}</span>
+                  <span className="font-mono text-[12px] text-accent">{note.range}</span>
                   <span className="text-xs font-semibold text-text">{note.title}</span>
                 </div>
                 <p className="mt-1 text-xs leading-relaxed text-muted">{note.description}</p>
@@ -134,7 +134,7 @@ export default function AsciiTableTool() {
                   <span className="w-6 shrink-0 text-center font-mono text-sm text-text">
                     {sample.char}
                   </span>
-                  <span className="shrink-0 font-mono text-[11px] text-faint">
+                  <span className="shrink-0 font-mono text-[12px] text-faint">
                     0x{sample.code.toString(16).toUpperCase().padStart(2, "0")}
                   </span>
                   <span className="min-w-0 truncate text-xs text-muted">{sample.name}</span>

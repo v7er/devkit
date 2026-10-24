@@ -13,7 +13,7 @@ export function Badge({
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.08em]",
+        "inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[12px] font-medium uppercase tracking-[0.08em]",
         tone === "neutral" && "bg-surface-2 text-faint",
         tone === "accent" && "bg-accent-soft text-accent",
         tone === "warning" && "bg-warning-soft text-warning",
@@ -27,7 +27,7 @@ export function Badge({
 
 export function Kbd({ children }: { children: ReactNode }) {
   return (
-    <kbd className="rounded-md bg-surface-3/70 px-1.5 py-0.5 font-mono text-[10px] leading-none text-faint">
+    <kbd className="rounded-md bg-surface-3/70 px-1.5 py-0.5 font-mono text-[12px] leading-none text-faint">
       {children}
     </kbd>
   );

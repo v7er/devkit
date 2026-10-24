@@ -137,7 +137,7 @@ export default function SlugGeneratorTool() {
         >
           <div className="max-h-80 overflow-auto rounded-lg border border-line">
             <table className="w-full border-collapse text-left text-xs">
-              <thead className="sticky top-0 bg-surface-2 text-[10px] uppercase tracking-wider text-faint">
+              <thead className="sticky top-0 bg-surface-2 text-[12px] uppercase tracking-wider text-faint">
                 <tr>
                   <th className="border-b border-line px-3 py-2 font-semibold">Source</th>
                   <th className="border-b border-line px-3 py-2 font-semibold">Slug</th>

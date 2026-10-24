@@ -88,7 +88,7 @@ export default function TailwindSearchTool() {
                     <Badge>{CATEGORY_LABELS.get(utility.category) ?? utility.category}</Badge>
                   </div>
                   <p className="text-xs text-muted">{utility.description}</p>
-                  <p className="font-mono text-[11px] text-faint">{utility.css}</p>
+                  <p className="font-mono text-[12px] text-faint">{utility.css}</p>
                 </div>
                 <div className="flex shrink-0 items-center gap-1">
                   <CopyButton value={utility.className} label="Copy class" />

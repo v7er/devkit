@@ -121,7 +121,7 @@ export default function BaseConverterTool() {
                     className="flex items-start justify-between gap-2 rounded-lg border border-line bg-surface-2 px-3 py-2"
                   >
                     <div className="min-w-0">
-                      <p className="text-[10px] font-semibold uppercase tracking-wider text-faint">
+                      <p className="text-[12px] font-semibold uppercase tracking-wider text-faint">
                         {row.label}
                       </p>
                       <p className="mt-0.5 break-all font-mono text-sm text-text">{row.value}</p>

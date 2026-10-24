@@ -20,8 +20,8 @@
     "tauri": "pnpm --filter @devkit/desktop tauri",
     "tauri:dev": "pnpm --filter @devkit/desktop tauri dev",
     "tauri:build": "pnpm --filter @devkit/desktop tauri build",
-    "deploy": "pnpm --filter @devkit/web deploy",
-    "deploy:dry": "pnpm --filter @devkit/web deploy:dry"
+    "deploy": "pnpm --filter @devkit/web run deploy",
+    "deploy:dry": "pnpm --filter @devkit/web run deploy:dry"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",

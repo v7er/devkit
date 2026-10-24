@@ -91,7 +91,7 @@ export default function TextCounterTool() {
                 <p className="font-mono text-lg font-semibold text-text">
                   {formatNumber(card.value)}
                 </p>
-                <p className="text-[11px] text-faint">{card.label}</p>
+                <p className="text-[12px] text-faint">{card.label}</p>
               </div>
             ))}
           </div>

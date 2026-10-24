@@ -186,11 +186,11 @@ export default function UuidUlidTool() {
           {values.length ? (
             <>
               <div className="flex flex-wrap gap-2">
-                <span className="inline-flex items-center gap-1 rounded-full border border-line bg-surface-2 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-faint">
+                <span className="inline-flex items-center gap-1 rounded-full border border-line bg-surface-2 px-2 py-0.5 text-[12px] font-semibold uppercase tracking-wider text-faint">
                   <Fingerprint className="size-3" aria-hidden />
                   {mode === "ulid" ? "ULID" : mode === "uuid-v4" ? "UUID v4" : "UUID v5"}
                 </span>
-                <span className="inline-flex items-center gap-1 rounded-full border border-line bg-surface-2 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-faint">
+                <span className="inline-flex items-center gap-1 rounded-full border border-line bg-surface-2 px-2 py-0.5 text-[12px] font-semibold uppercase tracking-wider text-faint">
                   <Layers className="size-3" aria-hidden />
                   {values.length} {values.length === 1 ? "value" : "values"}
                 </span>

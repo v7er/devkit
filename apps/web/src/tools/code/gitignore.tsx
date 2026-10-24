@@ -57,7 +57,7 @@ export default function GitignoreTool() {
                 <span className="min-w-0">
                   <span className="flex items-center gap-1.5 text-sm font-medium text-text">
                     {preset.label}
-                    <span className="font-mono text-[10px] text-faint">
+                    <span className="font-mono text-[12px] text-faint">
                       {preset.patterns.length}
                     </span>
                   </span>

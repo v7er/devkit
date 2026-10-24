@@ -193,7 +193,7 @@ export default function DnsLookupTool() {
                   <li key={`${record.name}-${record.type}-${index}`} className="py-2.5">
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <span className="break-all font-mono text-xs text-text">{record.name}</span>
-                      <span className="text-[10px] uppercase tracking-wider text-faint">
+                      <span className="text-[12px] uppercase tracking-wider text-faint">
                         {record.type} · TTL {record.ttl}s
                       </span>
                     </div>

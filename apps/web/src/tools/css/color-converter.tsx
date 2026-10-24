@@ -30,7 +30,7 @@ function ConversionRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex items-center justify-between gap-3 rounded-lg border border-line bg-surface-2 px-3 py-2">
       <div className="min-w-0">
-        <p className="text-[10px] font-semibold uppercase tracking-wider text-faint">{label}</p>
+        <p className="text-[12px] font-semibold uppercase tracking-wider text-faint">{label}</p>
         <p className="truncate font-mono text-xs text-text">{value}</p>
       </div>
       <CopyButton value={value} size="icon" label={`Copy ${label}`} />
@@ -107,7 +107,7 @@ export default function ColorConverterTool() {
                   onChange={(event) => handleColorValue(event.target.value)}
                   aria-label="Color value"
                   spellCheck={false}
-                  className="font-mono text-[13px]"
+                  className="font-mono text-[14px]"
                 />
               </div>
             </Field>

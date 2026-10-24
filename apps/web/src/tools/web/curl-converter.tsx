@@ -55,7 +55,7 @@ function readCurl(input: string): ParsedState {
 function SummaryRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex flex-col gap-0.5">
-      <span className="text-[10px] font-semibold uppercase tracking-wider text-faint">{label}</span>
+      <span className="text-[12px] font-semibold uppercase tracking-wider text-faint">{label}</span>
       <span className="break-all font-mono text-xs text-text">{value}</span>
     </div>
   );

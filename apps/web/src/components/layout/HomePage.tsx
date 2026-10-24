@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { Search } from "lucide-react";
+import { Download, Search } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useSearchPalette } from "@/app/palette";
 import { Kbd } from "@/components/ui";
@@ -16,13 +16,13 @@ export function HomePage() {
   return (
     <div className="animate-fade-in">
       <section className="pb-14 pt-6 text-center sm:pb-20 sm:pt-14">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-accent">
+        <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-accent">
           Local-first developer toolbox
         </p>
         <h1 className="mx-auto mt-4 max-w-3xl text-4xl font-semibold leading-[1.04] tracking-[-0.045em] text-text sm:text-6xl">
           Every developer tool, in one place.
         </h1>
-        <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-muted sm:text-base">
+        <p className="mx-auto mt-5 max-w-xl text-[16px] leading-relaxed text-muted sm:text-base">
           Format, inspect, convert, and generate. Everything runs in your browser and stays on your
           device.
         </p>
@@ -30,7 +30,7 @@ export function HomePage() {
         <button
           type="button"
           onClick={onSearch}
-          className="mx-auto mt-8 flex h-12 w-full max-w-md items-center gap-3 rounded-full bg-surface-2 px-5 text-left text-sm text-faint shadow-panel transition-colors hover:bg-surface-3 hover:text-muted"
+          className="mx-auto mt-8 flex h-12 w-full max-w-md items-center gap-3 rounded-full bg-field px-5 text-left text-sm text-faint shadow-panel ring-1 ring-line/60 transition-colors hover:bg-field-hover hover:text-muted hover:ring-line-strong"
         >
           <Search className="size-4 shrink-0" aria-hidden />
           <span className="flex-1">Search {tools.length} tools</span>
@@ -40,6 +40,14 @@ export function HomePage() {
         <p className="mt-5 text-xs text-faint">
           {tools.length} tools · {CATEGORIES.length} categories · No uploads · MIT licensed
         </p>
+
+        <Link
+          to="/download"
+          className="mt-4 inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[13px] text-muted transition-colors hover:bg-surface-2 hover:text-text"
+        >
+          <Download className="size-3.5" aria-hidden />
+          Get the desktop app
+        </Link>
       </section>
 
       {recent.length > 0 ? (
@@ -52,7 +60,7 @@ export function HomePage() {
               <Link
                 key={tool.id}
                 to={`/tools/${tool.id}`}
-                className="inline-flex items-center rounded-full bg-surface px-3.5 py-2 text-[13px] text-text shadow-panel transition-colors hover:bg-surface-2"
+                className="inline-flex items-center rounded-full bg-surface px-3.5 py-2 text-[14px] text-text shadow-panel transition-colors hover:bg-surface-2"
               >
                 {tool.name}
               </Link>

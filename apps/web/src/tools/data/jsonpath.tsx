@@ -87,7 +87,7 @@ export default function JsonPathTool() {
               placeholder="$.items[*].id"
               aria-label="JSONPath expression"
               spellCheck={false}
-              className="font-mono text-[13px]"
+              className="font-mono text-[14px]"
             />
           </Field>
           <div className="flex flex-wrap gap-1.5">
@@ -96,7 +96,7 @@ export default function JsonPathTool() {
                 key={example}
                 variant="ghost"
                 size="sm"
-                className="font-mono text-[11px]"
+                className="font-mono text-[12px]"
                 onClick={() => setExpression(example)}
               >
                 {example}
@@ -141,7 +141,7 @@ export default function JsonPathTool() {
                       <code className="truncate font-mono text-xs text-text">{match.path}</code>
                       <CopyButton value={value} size="icon" />
                     </div>
-                    <pre className="max-h-48 overflow-auto whitespace-pre-wrap break-words p-3 font-mono text-[13px] leading-relaxed text-text">
+                    <pre className="max-h-48 overflow-auto whitespace-pre-wrap break-words p-3 font-mono text-[14px] leading-relaxed text-text">
                       {value}
                     </pre>
                   </div>

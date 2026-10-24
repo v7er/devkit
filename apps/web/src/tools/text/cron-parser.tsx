@@ -149,7 +149,7 @@ export default function CronParserTool() {
                     <Badge>{index + 1}</Badge>
                     <div className="min-w-0">
                       <p className="text-sm text-text">{run.formatted}</p>
-                      <p className="font-mono text-[11px] text-faint">{run.iso}</p>
+                      <p className="font-mono text-[12px] text-faint">{run.iso}</p>
                     </div>
                   </li>
                 ))}
@@ -166,7 +166,7 @@ export default function CronParserTool() {
       <Panel title="Field reference" description="Standard cron syntax; named months and weekdays are accepted.">
         <div className="overflow-auto rounded-lg border border-line">
           <table className="w-full border-collapse text-left text-xs">
-            <thead className="bg-surface-2 text-[10px] uppercase tracking-wider text-faint">
+            <thead className="bg-surface-2 text-[12px] uppercase tracking-wider text-faint">
               <tr>
                 <th className="border-b border-line px-3 py-2 font-semibold">Field</th>
                 <th className="border-b border-line px-3 py-2 font-semibold">Range</th>

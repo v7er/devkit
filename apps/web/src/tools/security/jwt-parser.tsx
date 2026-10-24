@@ -149,11 +149,11 @@ export default function JwtParserTool() {
                     >
                       <div className="min-w-0">
                         <p className="truncate font-mono text-xs text-text">{claim.key}</p>
-                        <p className="truncate text-[11px] text-faint">{claim.label}</p>
+                        <p className="truncate text-[12px] text-faint">{claim.label}</p>
                       </div>
                       <div className="min-w-0 space-y-1">
                         <p className="break-words font-mono text-xs text-muted">{claim.value}</p>
-                        {claim.time ? <p className="text-[11px] text-faint">{claim.time}</p> : null}
+                        {claim.time ? <p className="text-[12px] text-faint">{claim.time}</p> : null}
                         {claim.state !== "unknown" ? (
                           <Badge tone={claim.state === "valid" ? "accent" : "warning"}>
                             {claim.state}
@@ -173,13 +173,13 @@ export default function JwtParserTool() {
                   </p>
                   <CopyButton value={parsed.jwt.signature} />
                 </div>
-                <p className="mt-1 break-all font-mono text-[11px] text-faint">
+                <p className="mt-1 break-all font-mono text-[12px] text-faint">
                   {parsed.jwt.signature || "(empty)"}
                 </p>
-                <p className="mt-2 break-all font-mono text-[11px] text-faint">
+                <p className="mt-2 break-all font-mono text-[12px] text-faint">
                   hex: {parsed.jwt.signatureHex || "(empty)"}
                 </p>
-                <p className="mt-2 text-[11px] leading-relaxed text-faint">
+                <p className="mt-2 text-[12px] leading-relaxed text-faint">
                   The signature bytes are shown for inspection only. Use the JWT Verifier with the
                   issuer's key to check them.
                 </p>

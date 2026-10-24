@@ -163,7 +163,7 @@ export default function UrlParserTool() {
               </p>
             ) : (
               <div className="space-y-2">
-                <div className="grid grid-cols-[1fr_1fr_auto] gap-2 text-[10px] font-semibold uppercase tracking-wider text-faint">
+                <div className="grid grid-cols-[1fr_1fr_auto] gap-2 text-[12px] font-semibold uppercase tracking-wider text-faint">
                   <span>Key</span>
                   <span>Value</span>
                   <span className="w-9" />

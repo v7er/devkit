@@ -147,7 +147,7 @@ export default function DateDiffTool() {
                 ) : null}
 
                 <div className="rounded-lg border border-line bg-surface-2 p-3">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-faint">
+                  <p className="text-[12px] font-semibold uppercase tracking-wider text-faint">
                     Calendar difference
                   </p>
                   <p className="mt-1 flex items-center gap-2 text-lg font-semibold text-text">
@@ -187,7 +187,7 @@ export default function DateDiffTool() {
                       {DECIMAL_FORMATTER.format(analysis.data.business)}
                     </span>
                   </InlineRow>
-                  <p className="mt-1 text-[11px] text-faint">
+                  <p className="mt-1 text-[12px] text-faint">
                     Weekends are excluded; public holidays are not.
                   </p>
                 </div>

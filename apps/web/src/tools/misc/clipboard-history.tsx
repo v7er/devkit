@@ -245,11 +245,11 @@ export default function ClipboardHistoryTool() {
             <ul className="space-y-2">
               {filtered.map((entry) => (
                 <li key={entry.id} className="rounded-lg border border-line bg-surface-2 p-3">
-                  <p className="whitespace-pre-wrap break-words font-mono text-[13px] leading-relaxed text-text">
+                  <p className="whitespace-pre-wrap break-words font-mono text-[14px] leading-relaxed text-text">
                     {entry.text}
                   </p>
                   <div className="mt-2 flex flex-wrap items-center justify-between gap-2">
-                    <span className="text-[11px] text-faint">
+                    <span className="text-[12px] text-faint">
                       {formatTimestamp(entry.addedAt)} · {entry.text.length} characters
                     </span>
                     <div className="flex items-center gap-1">

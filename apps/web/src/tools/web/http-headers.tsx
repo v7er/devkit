@@ -98,7 +98,7 @@ export default function HttpHeadersTool() {
               </div>
 
               <div>
-                <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-faint">
+                <p className="mb-1.5 text-[12px] font-semibold uppercase tracking-wider text-faint">
                   Security headers
                 </p>
                 <ul className="space-y-1.5">
@@ -117,7 +117,7 @@ export default function HttpHeadersTool() {
               </div>
 
               <div>
-                <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-faint">
+                <p className="mb-1.5 text-[12px] font-semibold uppercase tracking-wider text-faint">
                   Duplicate headers
                 </p>
                 {state.value.duplicates.length === 0 ? (

@@ -133,7 +133,7 @@ export default function PaletteExtractorTool() {
                     />
                     <div className="min-w-0 flex-1">
                       <p className="font-mono text-xs text-text">{color.hex}</p>
-                      <p className="text-[10px] text-faint">
+                      <p className="text-[12px] text-faint">
                         {color.percentage.toFixed(1)}% · {color.count.toLocaleString()} px
                       </p>
                     </div>

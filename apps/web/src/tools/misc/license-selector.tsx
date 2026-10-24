@@ -152,7 +152,7 @@ export default function LicenseSelectorTool() {
             return (
               <div key={item.id} className="grid gap-2 sm:grid-cols-[minmax(0,9rem)_minmax(0,1fr)_3rem] sm:items-center">
                 <div className="flex items-center gap-2">
-                  <span className="w-4 font-mono text-[11px] text-faint">{index + 1}</span>
+                  <span className="w-4 font-mono text-[12px] text-faint">{index + 1}</span>
                   <span className="text-xs font-medium text-text">{license.name}</span>
                 </div>
                 <div className="h-2 overflow-hidden rounded-full bg-surface-3">

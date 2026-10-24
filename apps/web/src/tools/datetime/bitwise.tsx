@@ -41,7 +41,7 @@ function ValueRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex items-center justify-between gap-2 rounded-lg border border-line bg-surface-2 px-3 py-2">
       <div className="min-w-0">
-        <p className="text-[10px] font-semibold uppercase tracking-wider text-faint">{label}</p>
+        <p className="text-[12px] font-semibold uppercase tracking-wider text-faint">{label}</p>
         <p className="mt-0.5 break-all font-mono text-sm text-text">{value}</p>
       </div>
       <CopyButton value={value} size="icon" label={`Copy ${label.toLowerCase()}`} />
@@ -148,7 +148,7 @@ export default function BitwiseTool() {
               <>
                 <div className="rounded-lg border border-line bg-surface-2 p-3">
                   <div className="flex items-center justify-between gap-2">
-                    <p className="text-[10px] font-semibold uppercase tracking-wider text-faint">
+                    <p className="text-[12px] font-semibold uppercase tracking-wider text-faint">
                       Binary
                     </p>
                     <CopyButton

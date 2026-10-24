@@ -221,7 +221,7 @@ export default function ExifViewerTool() {
             <div className="space-y-3">
               {groups.map(([group, entries]) => (
                 <div key={group} className="overflow-hidden rounded-lg border border-line">
-                  <p className="border-b border-line bg-surface-2 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-faint">
+                  <p className="border-b border-line bg-surface-2 px-3 py-1.5 text-[12px] font-semibold uppercase tracking-wider text-faint">
                     {group}
                   </p>
                   <dl className="divide-y divide-line">

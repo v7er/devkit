@@ -1,4 +1,4 @@
-import { ChevronRight, Command, Moon, Search, Sun } from "lucide-react";
+import { ChevronRight, Command, Download, Moon, Search, Sun } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "@/app/theme";
 import { categoryById } from "@/tools/categories";
@@ -35,13 +35,13 @@ export function TopBar({ onSearch }: { onSearch: () => void }) {
           <span className="flex size-6 items-center justify-center rounded-[7px] bg-text text-canvas transition-transform group-active:scale-95">
             <Command className="size-3.5" strokeWidth={2.5} aria-hidden />
           </span>
-          <span className="text-[15px] font-semibold tracking-[-0.02em] text-text">devkit</span>
+          <span className="text-[16px] font-semibold tracking-[-0.02em] text-text">devkit</span>
         </Link>
 
         <nav
           aria-label="Breadcrumb"
           className={cn(
-            "ml-1 flex min-w-0 flex-1 items-center gap-1.5 text-[13px]",
+            "ml-1 flex min-w-0 flex-1 items-center gap-1.5 text-[14px]",
             !category && "invisible",
           )}
         >
@@ -71,10 +71,20 @@ export function TopBar({ onSearch }: { onSearch: () => void }) {
         </nav>
 
         <div className="flex shrink-0 items-center gap-1.5">
+          <Link
+            to="/download"
+            className="flex h-9 items-center gap-1.5 rounded-full px-3 text-[14px] text-muted transition-colors hover:bg-surface-2 hover:text-text"
+            aria-label="Download desktop app"
+            title="Download desktop app"
+          >
+            <Download className="size-4" aria-hidden />
+            <span className="hidden md:inline">Download</span>
+          </Link>
+
           <button
             type="button"
             onClick={onSearch}
-            className="hidden h-9 items-center gap-2 rounded-full bg-surface-2 pl-3 pr-2 text-[13px] text-faint transition-colors hover:bg-surface-3 hover:text-muted sm:flex"
+            className="hidden h-9 items-center gap-2 rounded-full bg-field pl-3 pr-2 text-[14px] text-faint ring-1 ring-line/60 transition-colors hover:bg-field-hover hover:text-muted hover:ring-line-strong sm:flex"
             aria-label="Search tools"
           >
             <Search className="size-3.5" aria-hidden />
@@ -85,7 +95,7 @@ export function TopBar({ onSearch }: { onSearch: () => void }) {
           <button
             type="button"
             onClick={onSearch}
-            className="flex size-9 items-center justify-center rounded-full bg-surface-2 text-muted transition-colors hover:bg-surface-3 hover:text-text sm:hidden"
+            className="flex size-9 items-center justify-center rounded-full bg-field text-muted ring-1 ring-line/60 transition-colors hover:bg-field-hover hover:text-text hover:ring-line-strong sm:hidden"
             aria-label="Search tools"
           >
             <Search className="size-4" aria-hidden />

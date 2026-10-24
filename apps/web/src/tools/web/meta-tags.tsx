@@ -108,7 +108,7 @@ export default function MetaTagsTool() {
             <Field
               label="Title"
               action={
-                <span className="text-[10px] text-faint">{textLength(form.title)}/60</span>
+                <span className="text-[12px] text-faint">{textLength(form.title)}/60</span>
               }
               hint="Shown as the search result headline. Keep it under about 60 characters."
             >
@@ -122,7 +122,7 @@ export default function MetaTagsTool() {
             <Field
               label="Description"
               action={
-                <span className="text-[10px] text-faint">{textLength(form.description)}/160</span>
+                <span className="text-[12px] text-faint">{textLength(form.description)}/160</span>
               }
               hint="Often used as the search snippet. Aim for 50–160 characters."
             >
@@ -157,7 +157,7 @@ export default function MetaTagsTool() {
 
         <Panel title="Social cards" description="Open Graph and Twitter card metadata for shared links.">
           <div className="space-y-3">
-            <p className="text-[10px] font-semibold uppercase tracking-wider text-faint">Open Graph</p>
+            <p className="text-[12px] font-semibold uppercase tracking-wider text-faint">Open Graph</p>
             <TextField
               label="og:title"
               value={form.ogTitle}
@@ -198,7 +198,7 @@ export default function MetaTagsTool() {
               />
             </div>
 
-            <p className="pt-1 text-[10px] font-semibold uppercase tracking-wider text-faint">Twitter</p>
+            <p className="pt-1 text-[12px] font-semibold uppercase tracking-wider text-faint">Twitter</p>
             <div className="grid gap-3 sm:grid-cols-2">
               <Select
                 label="twitter:card"

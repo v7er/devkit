@@ -220,7 +220,7 @@ export default function WebSocketTesterTool() {
                 key={entry.id}
                 className="flex items-start gap-2 rounded-md border border-line bg-surface-2/40 px-2.5 py-2"
               >
-                <span className="shrink-0 font-mono text-[10px] text-faint">{entry.time}</span>
+                <span className="shrink-0 font-mono text-[12px] text-faint">{entry.time}</span>
                 <Badge
                   tone={
                     entry.direction === "in"

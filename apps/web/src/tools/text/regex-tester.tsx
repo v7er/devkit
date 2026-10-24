@@ -155,17 +155,17 @@ export default function RegexTesterTool() {
                     key={`${match.index}-${index}`}
                     className="rounded-lg border border-line bg-surface-2 px-3 py-2"
                   >
-                    <div className="flex items-center justify-between gap-2 font-mono text-[10px] uppercase tracking-wider text-faint">
+                    <div className="flex items-center justify-between gap-2 font-mono text-[12px] uppercase tracking-wider text-faint">
                       <span>Match {index + 1}</span>
                       <span>
                         {match.index}–{match.end}
                       </span>
                     </div>
-                    <pre className="mt-1 overflow-x-auto whitespace-pre-wrap break-all font-mono text-[13px] text-text">
+                    <pre className="mt-1 overflow-x-auto whitespace-pre-wrap break-all font-mono text-[14px] text-text">
                       {match.value || "(empty match)"}
                     </pre>
                     {match.groups.length > 0 ? (
-                      <ul className="mt-1.5 space-y-0.5 font-mono text-[11px] text-muted">
+                      <ul className="mt-1.5 space-y-0.5 font-mono text-[12px] text-muted">
                         {match.groups.map((group, groupIndex) => (
                           <li key={groupIndex}>
                             <span className="text-faint">${groupIndex + 1}</span> ={" "}
@@ -189,7 +189,7 @@ export default function RegexTesterTool() {
               </ul>
             )}
 
-            <p className="font-mono text-[11px] text-faint">
+            <p className="font-mono text-[12px] text-faint">
               {formatNumber(result.matches.length)} match
               {result.matches.length === 1 ? "" : "es"} · {result.elapsedMs.toFixed(2)} ms
             </p>
@@ -212,7 +212,7 @@ export default function RegexTesterTool() {
         description="Highlights use the matches above; zero-width matches have no visible span."
         actions={<CopyButton value={text} label="Copy text" />}
       >
-        <div className="max-h-72 overflow-auto whitespace-pre-wrap break-words rounded-lg border border-line bg-surface-2 p-3 font-mono text-[13px] leading-relaxed text-text">
+        <div className="max-h-72 overflow-auto whitespace-pre-wrap break-words rounded-lg border border-line bg-surface-2 p-3 font-mono text-[14px] leading-relaxed text-text">
           {segments.length === 0 ? (
             <span className="text-faint">No match positions to highlight.</span>
           ) : (

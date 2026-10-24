@@ -77,15 +77,15 @@ function TreeNode({
         ) : (
           <span className="mt-0.5 size-3.5 shrink-0" aria-hidden />
         )}
-        <span className="shrink-0 text-[11px] font-semibold text-accent">{node.type}</span>
-        {node.label ? <span className="shrink-0 text-[11px] text-faint">{node.label}</span> : null}
+        <span className="shrink-0 text-[12px] font-semibold text-accent">{node.type}</span>
+        {node.label ? <span className="shrink-0 text-[12px] text-faint">{node.label}</span> : null}
         {node.detail ? (
-          <span className="min-w-0 truncate text-[11px] text-muted" title={node.detail}>
+          <span className="min-w-0 truncate text-[12px] text-muted" title={node.detail}>
             {node.detail}
           </span>
         ) : null}
         {node.location ? (
-          <span className="ml-auto shrink-0 pl-2 text-[10px] text-faint">{node.location}</span>
+          <span className="ml-auto shrink-0 pl-2 text-[12px] text-faint">{node.location}</span>
         ) : null}
       </div>
       {hasChildren && isOpen

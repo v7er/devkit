@@ -233,11 +233,11 @@ export default function ImageCompressorTool() {
               />
               <div className="grid grid-cols-2 gap-3">
                 <div className="rounded-lg border border-line bg-surface-2 p-3">
-                  <p className="text-[10px] uppercase tracking-wider text-faint">Before</p>
+                  <p className="text-[12px] uppercase tracking-wider text-faint">Before</p>
                   <p className="mt-1 font-mono text-sm text-text">{formatBytes(file.size)}</p>
                 </div>
                 <div className="rounded-lg border border-line bg-surface-2 p-3">
-                  <p className="text-[10px] uppercase tracking-wider text-faint">After</p>
+                  <p className="text-[12px] uppercase tracking-wider text-faint">After</p>
                   <p className="mt-1 font-mono text-sm text-text">{formatBytes(result.blob.size)}</p>
                 </div>
               </div>

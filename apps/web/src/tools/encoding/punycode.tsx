@@ -79,7 +79,7 @@ export default function PunycodeTool() {
             hint="Multiple labels are supported. A trailing dot is preserved."
           >
             <Input
-              className="font-mono text-[13px]"
+              className="font-mono text-[14px]"
               value={input}
               onChange={(event) => setInput(event.target.value)}
               placeholder={mode === "ascii" ? "münchen.example" : "xn--mnchen-3ya.example"}

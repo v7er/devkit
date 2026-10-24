@@ -89,7 +89,7 @@ function PaletteDialog({ onClose }: { onClose: () => void }) {
             aria-label="Search tools"
             aria-controls="command-results"
             aria-activedescendant={results[activeIndex] ? `command-result-${results[activeIndex]?.id}` : undefined}
-            className="h-14 w-full bg-transparent text-[15px] text-text placeholder:text-faint focus:outline-none"
+            className="h-14 w-full bg-transparent text-[16px] text-text placeholder:text-faint focus:outline-none"
           />
           <Kbd>Esc</Kbd>
         </div>
@@ -121,9 +121,9 @@ function PaletteDialog({ onClose }: { onClose: () => void }) {
                 </span>
                 <span className="min-w-0 flex-1">
                   <span className="block truncate text-sm text-text">{tool.name}</span>
-                  <span className="block truncate text-[11px] text-faint">{tool.description}</span>
+                  <span className="block truncate text-[12px] text-faint">{tool.description}</span>
                 </span>
-                <span className="hidden shrink-0 text-[10px] uppercase tracking-wider text-faint sm:block">
+                <span className="hidden shrink-0 text-[12px] uppercase tracking-wider text-faint sm:block">
                   {category?.name}
                 </span>
                 <ArrowRight
@@ -146,7 +146,7 @@ function PaletteDialog({ onClose }: { onClose: () => void }) {
           ) : null}
         </div>
 
-        <div className="flex items-center gap-3 border-t border-line/70 px-5 py-2.5 text-[10px] text-faint">
+        <div className="flex items-center gap-3 border-t border-line/70 px-5 py-2.5 text-[12px] text-faint">
           <span className="flex items-center gap-1">
             <Kbd>↑</Kbd>
             <Kbd>↓</Kbd>

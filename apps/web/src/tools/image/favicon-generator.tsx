@@ -184,7 +184,7 @@ export default function FaviconGeneratorTool() {
                         <Download className="size-3.5" aria-hidden />
                       </Button>
                     </div>
-                    <span className="text-[10px] text-faint">{formatBytes(result.blob.size)}</span>
+                    <span className="text-[12px] text-faint">{formatBytes(result.blob.size)}</span>
                   </div>
                 ))}
               </div>

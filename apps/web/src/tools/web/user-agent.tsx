@@ -31,7 +31,7 @@ function describePart(part: AgentPart | null): string {
 function ResultRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-lg border border-line bg-surface-2/40 px-3 py-2">
-      <p className="text-[10px] font-semibold uppercase tracking-wider text-faint">{label}</p>
+      <p className="text-[12px] font-semibold uppercase tracking-wider text-faint">{label}</p>
       <p className="mt-0.5 break-words font-mono text-xs text-text">{value}</p>
     </div>
   );

@@ -218,7 +218,7 @@ export default function BcryptTool() {
               {hashInput ? (
                 <div className="rounded-lg border border-line bg-surface-2 p-3">
                   <p className="text-xs font-semibold text-muted">Hash parameters</p>
-                  <p className="mt-1 break-all font-mono text-[11px] text-faint">
+                  <p className="mt-1 break-all font-mono text-[12px] text-faint">
                     {(() => {
                       try {
                         const info = describeBcryptHash(hashInput);
