@@ -100,9 +100,12 @@ configuration is in `apps/web/wrangler.jsonc`; security headers live in
 
 ```bash
 pnpm --filter @devkit/web exec wrangler login   # once
-pnpm deploy:dry                                 # build + validate, no upload
-pnpm deploy                                     # build + deploy
+pnpm run deploy:dry                             # build + validate, no upload
+pnpm run deploy                                 # build + deploy
 ```
+
+`pnpm deploy` on its own is pnpm's built-in workspace deploy command, so it prints
+`ERR_PNPM_NOTHING_TO_DEPLOY` instead of running the project script. Use `pnpm run deploy`.
 
 `wrangler deploy` prints the `*.workers.dev` URL. To attach a custom domain, add a route to
 `apps/web/wrangler.jsonc`:
@@ -120,7 +123,7 @@ For a Git-connected Cloudflare Pages project, use:
 - Root directory: repository root
 - Environment: `NODE_VERSION=22`, `PNPM_VERSION=10`
 
-For Workers Builds, use `pnpm deploy` and let Wrangler read `apps/web/wrangler.jsonc`.
+For Workers Builds, use `pnpm run deploy` and let Wrangler read `apps/web/wrangler.jsonc`.
 
 ### CI
 

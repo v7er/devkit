@@ -109,8 +109,8 @@ Update this list if the scaffold differs; do not leave stale commands behind.
 | Unit tests | `pnpm test` |
 | Production web build | `pnpm build` |
 | Desktop bundle | `pnpm tauri:build` |
-| Deploy dry run | `pnpm deploy:dry` |
-| Deploy website | `pnpm deploy` |
+| Deploy dry run | `pnpm run deploy:dry` |
+| Deploy website | `pnpm run deploy` |
 
 Before handing off work, run `pnpm typecheck`, `pnpm lint`, and `pnpm test`. Run
 `pnpm build` for changes that affect bundling, lazy loading, or dependencies. Do not
